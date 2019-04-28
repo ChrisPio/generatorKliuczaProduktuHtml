@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Klucz produktu LED</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="bg" id="bg">
+        <h1>Konfigurator klucza produktu LED BE COOL</h1>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <h4>Rodzaj oprawy:</h4>
+                </td>
+                <td><input class="radio" type="radio" name="oprawa" id="M-">Mleczna
+                </td>
+                <td><input class="radio" type="radio" name="oprawa" id="A-">Transparentna</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Długość:</h4>
+                </td>
+                <td><input class="radio" type="radio" name="dlugosc" id="049">49 cm</td>
+                <td><input class="radio" type="radio" name="dlugosc" id="074">74 cm</td>
+                <td><input class="radio" type="radio" name="dlugosc" id="131">131 cm</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Barwa światła:</h4>
+                </td>
+                <td><input class="radio" type="radio" name="barwa" id="3k">3k</td>
+                <td><input class="radio" type="radio" name="barwa" id="4k">4k</td>
+                <td><input class="radio" type="radio" name="barwa" id="5k">5k</td>
+                <td><input class="radio" type="radio" name="barwa" id="6k">6k</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Zasilanie:</h4>
+                </td>
+                <td><input class="radio" type="radio" name="zasilanie" id="012">12 VDC</td>
+                <td><input class="radio" type="radio" name="zasilanie" id="024">24 VDC</td>
+                <td><input class="radio" type="radio" name="zasilanie" id="230">230 VDC</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Długość przewodu:</h4>
+                </td>
+                <td><input class="radio" type="radio" name="dlPrzewodu" id="00">bez przewodu</td>
+                <td><input class="radio" type="radio" name="dlPrzewodu" id="01">1 m</td>
+                <td><input class="radio" type="radio" name="dlPrzewodu" id="05">5 m</td>
+                <td><input class="radio" type="radio" name="dlPrzewodu" id="10">10 m</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Zakończenie przewodu:</h4>
+                </td>
+                <td><input class="radio" type="radio" name="zakPrzewodu" id="wtyczkaOkragla">wtyczka okrągła</td>
+                <td><input class="radio" type="radio" name="zakPrzewodu" id="rozsztyeZyly">rozszyte żyły</td>
+                <td><input class="radio" type="radio" name="zakPrzewodu" id="kostka">kostka wewnątrz oprawy</td>
+                <td><input class="radio" type="radio" name="zakPrzewodu" id="wtyczka12vdc">wtyczka do gniazda 12 VDC
+                </td>
+        </table>
+        <table>
+            <tr>
+                <form colspan="2" name="form">
+                    <input class="textview" name="textview" placeholder="np: M-131-4K-230-05-W">
+                </form>
+                <input colspan="2" class="button" type="button" value="generuj kod" onclick="generujKod()">
+                <input colspan="2" class="button" type="button" value="wyczyść" onclick="clean()">
+            </tr>
+
+        </table>
+    </div>
+    <p id="M1314K23005W">
+
+        Parametry techniczne: <br>
+        Napięcie zasilające: 230V AC<br>
+        Częstotliwość linii: 50 Hz<br>
+        Źródło światła: SMD LED - LEDBECOOL<br>
+        Liczba źródeł LED: 120<br>
+        Temperatura barwowa: 4000K (możliwość zamówienia 5000K lub 6000K)<br>
+        Strumień świetlny: 3000lm – 3200lm<br>
+        Moc nominalna źródła światła: 22W (odpowiada żarówce o mocy 200W)<br>
+        Sprawność świetlna: 140 lm/W<br>
+        40000 h / 30000 cykli on/off – długa żywotność lampy<br>
+        Klasa ochrony: II<br>
+        Stopień ochrony IP: IP66 – lampa dodatkowo uszczelniona<br>
+        Stopień ochrony IK: IK10 – lampa odporna na wstrząsy i uderzenia<br>
+        Materiał oprawy: Poliwęglan<br>
+        Rodzaj oprawy: Mleczna – niweluje zjawisko olśnienia<br>
+        Przewód i zatyczki: Czarne<br>
+        Długość przewodu: 5 m, zakończony wtyczką<br>
+        Długość lampy: 1,31 m<br>
+        Długość lampy z uchwytami: 1,7 m<br>
+        Średnica zewnętrzna: Ø 25 mm<br>
+    </p>
+
+    <!-- <div id="img"><img src="/img/M49.jpg" alt="coś nie tak"></div> -->
+
+    <script src="js.js"></script>
+</body>
+
+</html>
